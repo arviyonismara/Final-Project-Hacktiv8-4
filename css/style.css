@@ -33,7 +33,7 @@ body {
 }
 
 .container-title h2:nth-child(2) {
-    color: #ffffff;
+    color: #7b61ff;
     animation: animate 4s ease-in-out infinite;
 }
 
