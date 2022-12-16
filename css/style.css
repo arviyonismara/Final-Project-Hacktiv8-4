@@ -281,13 +281,15 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 /* footer */
 .footer{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 3em;
+    height: 4em;
     background: #9DB2C3;
     margin-top: 10em;
+    padding: 1em 0;
 }
 .footer p{
+    font-size: 1.5em;
     color: #282539;
 }
 @media only screen and (max-width: 1080px) {
