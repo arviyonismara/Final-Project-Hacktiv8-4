@@ -28,58 +28,64 @@ searchButton.addEventListener("click", function () {
       cloud.innerHTML = `${response.clouds.all}` + "%";
 
       let image = document.querySelector(".image");
-      image.innerHTML = <img></img>;
 
       if (`${response.weather[0].description}` == "clear sky") {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src = "/image/clear.png";
       } else if (
-        `${response.weather[0].description}` == "mist" ||
-        "Smoke" ||
-        "Haze" ||
-        "sand / dust whirls" ||
-        "fog" ||
-        "sand" ||
+        `${response.weather[0].description}` == "mist" &&
+        "Smoke" &&
+        "Haze" &&
+        "sand / dust whirls" &&
+        "fog" &&
+        "sand" &&
         "dust"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src = "/image/wind.png";
       } else if (
-        `${response.weather[0].description}` == "few clouds" ||
+        `${response.weather[0].description}` == "few clouds" &&
         "scattered clouds"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src = "/image/sun-cloud.png";
       } else if (
-        `${response.weather[0].description}` == "overcast clouds" ||
+        `${response.weather[0].description}` == "overcast clouds" &&
         "broken clouds"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src = "/image/cloud.png";
       } else if (
-        `${response.weather[0].description}` == "light rain" ||
-        "moderate rain" ||
-        "heavy intensity rain" ||
-        "very heavy rain" ||
-        "extreme rain" ||
-        "light intensity shower rain" ||
-        "shower rain" ||
-        "heavy intensity shower rain" ||
+        `${response.weather[0].description}` == "light rain" &&
+        "moderate rain" &&
+        "heavy intensity rain" &&
+        "very heavy rain" &&
+        "extreme rain" &&
+        "light intensity shower rain" &&
+        "shower rain" &&
+        "heavy intensity shower rain" &&
         "ragged shower rain"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src = "/image/rain.png";
       } else if (
         `${response.weather[0].description}` ==
-          "thunderstorm with light rain" ||
-        "thunderstorm with rain" ||
-        "thunderstorm with heavy rain" ||
-        "thunderstorm with light drizzle" ||
-        "thunderstorm with drizzle" ||
+        "thunderstorm with light rain" &&
+        "thunderstorm with rain" &&
+        "thunderstorm with heavy rain" &&
+        "thunderstorm with light drizzle" &&
+        "thunderstorm with drizzle" &&
         "thunderstorm with heavy drizzle"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src =
-          "/image/stormandrain.png";
+        "/image/stormandrain.png";
       } else if (
-        `${response.weather[0].description}` == "thunderstorm" ||
-        "heavy thunderstorm" ||
+        `${response.weather[0].description}` == "thunderstorm" &&
+        "heavy thunderstorm" &&
         "ragged thunderstorm"
-      ) {
+        ) {
+        document.getElementById("gambarBerganti").src = "#"
         document.getElementById("gambarBerganti").src =
           "/image/thunderstorm.png";
       }
