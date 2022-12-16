@@ -33,9 +33,16 @@
               <h1 class="city"></h1>
             </div>
             <div class="suhu">
-              <img src="/image/rain.png" alt="" class="mb-3" />
-              <h3><span class="temp"></span></h3>
-              <h3 class="condition"></h3>
+              <div class="image"></div>
+              <img
+                src="#"
+                alt=""
+                class="mb-3"
+                id="gambarBerganti"
+                onclick="searchButton"
+              />
+              <h1><span class="temp"></span></h1>
+              <h3 class="condition text-capitalize"></h3>
             </div>
           </div>
         </div>
@@ -55,16 +62,16 @@
           </form>
           <div class="ket">
             <div class="row d-flex flex-row mb-2">
-              <h6 class="col-sm-6 col-md-8 text-start">WIND SPEED</h6>
-              <h6 class="col-6 col-md-4 wind text-end"></h6>
+              <h6 class="col-sm-6 col-md-8 text-start">HUMIDITY</h6>
+              <h6 class="col-6 col-md-4 humidity text-end"></h6>
             </div>
             <div class="row d-flex flex-row mb-2">
               <h6 class="col-sm-6 col-md-8 text-start">CLOUDS</h6>
               <h6 class="col-6 col-md-4 cloud text-end"></h6>
             </div>
             <div class="row d-flex flex-row mb-2">
-              <h6 class="col-sm-6 col-md-8 text-start">HUMIDITY</h6>
-              <h6 class="col-6 col-md-4 humidity text-end"></h6>
+              <h6 class="col-sm-6 col-md-8 text-start">WIND SPEED</h6>
+              <h6 class="col-6 col-md-4 wind text-end"></h6>
             </div>
             <div
               class="min-max-temp border-bottom pb-3 d-flex justify-content-center align-items-center mt-3"

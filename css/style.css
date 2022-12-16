@@ -84,7 +84,11 @@ body{
     line-height: 27px;
 }
 .suhu{
-    margin-top: 300px;
+    margin-top: 270px;
+}
+.suhu img{
+    width: 80px;
+    height: 80px;
 }
 .kota img{
     width: 28px;
